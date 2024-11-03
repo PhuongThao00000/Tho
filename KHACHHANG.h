@@ -1,22 +1,19 @@
-#ifndef KHACHHANG_H
-#define KHACHHANG_H
+#ifndef KHACHANG_H
+#define KHACHANG_H
 
-#include <string>
+#include "Person.h"
 
 class KhachHang : public Person {
 private:
-    std::string ten;          // Tên khách hàng
-    std::string soDienThoai; // Số điện thoại
+    string customer_id;
 
 public:
-    // Constructor
-    KhachHang(const std::string& t, const std::string& sdt);
-
-    // Getter for name
-    std::string getTen() const;
-
-    // Getter for phone number
-    std::string getSoDienThoai() const;
+    KhachHang();
+    void inputInfo();
+    void displayInfo() const;
+    using Nguoi::updateInfo;   // Kế thừa phương thức updateInfo
+    using Nguoi::searchInfo;    // Kế thừa phương thức searchInfo
+    using Nguoi::deleteInfo;    // Kế thừa phương thức deleteInfo
 };
 
-#endif // KHACHHANG_H
+#endif // KHACHANG_H
