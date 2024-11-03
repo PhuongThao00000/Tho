@@ -58,16 +58,16 @@ class DatSan{ //public Service{
     void SuaThongTin();
 };
 
-class Customer: public DatSan{
-    string phone_number;
-    string customer_code;
-    string customer_name;
-    public:
-        Customer(string customer_code = "00", string customer_name = "-------", string phnumber = "000000000");
-        void NhapThongTin();
-        void XuatThongTin();
-        void SuaThongTin();   
-};
+// class Customer: public DatSan{
+//     string phone_number;
+//     string customer_code;
+//     string customer_name;
+//     public:
+//         Customer(string customer_code = "00", string customer_name = "-------", string phnumber = "000000000");
+//         void NhapThongTin();
+//         void XuatThongTin();
+//         void SuaThongTin();   
+// };
 
 // class Drink: public Service{
 //     private:
