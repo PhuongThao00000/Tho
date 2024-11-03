@@ -1,19 +1,21 @@
-#ifndef PERSON_H
-#define PERSON_H
+#ifndef NGUOI_H
+#define NGUOI_H
 
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-class Person {
+class Nguoi {
 protected:
-    string ten;  // Name
-    string sdt;  // Phone Number
+    string name;
+    string phone;
+    string person_id;
 
 public:
-    Person(const string& ten, const string& sdt);
-    void display() const;
+    Nguoi();
+    void inputInfo();
+    void displayInfo() const;
+    void updateInfo();
+    bool searchInfo(const string& search_id) const;
+    void deleteInfo();
 };
-
-#endif // PERSON_H
